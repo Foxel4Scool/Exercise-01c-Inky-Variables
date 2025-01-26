@@ -73,6 +73,7 @@ You make it half way and feel the struggle creep upon yourself then see a rope j
 
 == fall ==
 You barely manage to grab it before falling to your end as the rope gives to your weight.-> END
+
 == escape ==
 You push through the pain knowing the rope was to tattered to help and make it out with just a few scatches due to the sharp and difficult climb.-> END
 
@@ -82,7 +83,7 @@ You keep going until.. -> search_beginning
 == wolf_attack ==
 {search: Hurry! What now the wolves are closing in!|You decide your best bet was to wait for help but little did you know there were wolves in the cave.}
 + [Fight Back] -> fight_back
-+ {search} [Throw it at the wolves] -> friend_route
++ {search} [Throw it at the wolves] -> fetch_route
 * [Check your surroundings] -> search
 + [Run] -> run
 
@@ -93,8 +94,26 @@ You keep going until.. -> search_beginning
 == fight_back ==
 {sticks > 0 or tool == "Pocket Knife": You manage to fend off the wolves surviving long enough for a group to save you|Wow for real what did you expect their wolves..}
 -> END
-== friend_route ==
-Wow.. who would've expected such a stupid outcome.. they chased it those over glorified dogs. You were found playing fetch just a while later perfectly fine in the end. -> END
+
+== fetch_route ==
+Wow.. who would've expected such a stupid outcome.. they chased it those over glorified dogs. You were found playing fetch just a while later perfectly fine in the end. Now that your saved what do you do with those wolves?
+* [Keep them] -> idiot
+* [Ditch them] -> heartless
+
+== idiot ==
+Well in the end you forsake your entire family to an awful fate afterall the wolves weren't domesticatedwhat will you do now?.
+* [Play Fetch] -> safety_fetch
+* [Rest after your long adventure] -> danger_rest
+
+== safety_fetch ==
+They're happy.. for now... -> END
+
+== danger_rest ==
+You slept for the rest of your life. All 10 minutes that it took for the wolves to finish your family before moving on to their last sorce of food.. -> END
+
+== heartless ==
+Good call. Does't change the fact you just ditched those poor puppers in the cold darkness of the night -> END
+
 == run ==
 Wow for real what did you expect their wolves.. 
 -> END
